@@ -68,4 +68,11 @@ Prosjektstruktur
     │   ├── index.tsx       # App-oppstart
     ├── package.json        # Prosjektmetadata og avhengigheter
     └── README.md           # Prosjektdokumentasjon
+## Funksjoner
+
+- 📝 Bla gjennom jobbutlysninger fra flere kilder
+- 🔍 Filtrer jobber basert på søkeord, sted og selskap
+- ❤️ Lagre favorittjobber
+- 📱 Responsivt design for mobil og desktop
+- ⚡ Raskt og brukervennlig grensesnitt
 
