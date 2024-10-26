@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/job-fetch-app/static/css/main.861f223f.css",
+    "main.js": "/job-fetch-app/static/js/main.e4cc7e8f.js",
+    "static/js/453.3f06e77b.chunk.js": "/job-fetch-app/static/js/453.3f06e77b.chunk.js",
+    "index.html": "/job-fetch-app/index.html",
+    "main.861f223f.css.map": "/job-fetch-app/static/css/main.861f223f.css.map",
+    "main.e4cc7e8f.js.map": "/job-fetch-app/static/js/main.e4cc7e8f.js.map",
+    "453.3f06e77b.chunk.js.map": "/job-fetch-app/static/js/453.3f06e77b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.861f223f.css",
+    "static/js/main.e4cc7e8f.js"
+  ]
+}
