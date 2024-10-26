@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from "react";
-import Header from "./components/Header"; // Ensure `Header` matches the exact filename casing
+import Header from "./components/Header";
 import SidebarFilters from "./components/SidebarFilters";
 import JobList from "./components/JobList";
 import "./App.css";
