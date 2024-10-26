@@ -58,21 +58,15 @@ For å kjøre prosjektet lokalt, følg disse stegene:
    npm run deploy
 
 Dette vil bygge og publisere appen til GitHub Pages, tilgjengelig på https://saidxyz.github.io/job-fetch-app/.
-Prosjektstruktur
-   ```csharp
-   job-search-frontend/
-    ├── public/             # Statiske filer
-    ├── src/
-    │   ├── components/     # Gjenbrukbare komponenter (Header, JobList, etc.)
-    │   ├── App.tsx         # Hovedapplikasjonskomponenten
-    │   ├── index.tsx       # App-oppstart
-    ├── package.json        # Prosjektmetadata og avhengigheter
-    └── README.md           # Prosjektdokumentasjon
-## Funksjoner
 
-- 📝 Bla gjennom jobbutlysninger fra flere kilder
-- 🔍 Filtrer jobber basert på søkeord, sted og selskap
-- ❤️ Lagre favorittjobber
-- 📱 Responsivt design for mobil og desktop
-- ⚡ Raskt og brukervennlig grensesnitt
+## Bidra
+1. Fork prosjektet.
+3. Lag en ny gren for funksjonen eller feilrettingen din:
+      ```bash
+   git checkout -b ny-funksjon
 
+5. Commit endringene dine og push grenen:
+      ```bash
+   git push origin ny-funksjon
+
+7. Åpne en pull request i det opprinnelige prosjektet.
