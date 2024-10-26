@@ -1,0 +1,17 @@
+/* src/components/SidebarFilters.css */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  
+  .sidebar label {
+    display: block;
+    margin: 5px 0;
+  }
+  
