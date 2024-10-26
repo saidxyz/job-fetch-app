@@ -1,6 +1,6 @@
 # Job Fetch App
 
-![Job Fetch App](https://saidxyz.github.io/job-fetch-app/)  
+[Job Fetch App](https://saidxyz.github.io/job-fetch-app/)  
 En React-basert applikasjon som hjelper brukere med å finne jobber enkelt. Dette prosjektet henter jobbutlysninger og viser dem i et interaktivt og brukervennlig format.
 
 ## Innholdsfortegnelse
