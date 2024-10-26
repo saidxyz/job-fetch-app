@@ -16,7 +16,7 @@ const JobList: React.FC = () => {
 
   const apiKey = "AIzaSyCcUEHCF9Tfr8K4CQE5HayubnaqShBjgW8";
   const cseId = "a67f209cfeac9483d";
-  const query = "IT jobs site:finn.no"; // Customize the search query as needed
+  const query = "IT jobs"; // Customize the search query as needed
 
   useEffect(() => {
     fetchJobs();
@@ -26,30 +26,39 @@ const JobList: React.FC = () => {
   const fetchJobs = async () => {
     setLoading(true);
     setError(null);
+  
     try {
       const response = await axios.get("https://www.googleapis.com/customsearch/v1", {
         params: {
           key: apiKey,
           cx: cseId,
           q: query,
-          start: (page - 1) * 10 + 1, // Calculate the start index based on page
+          start: (page - 1) * 10 + 1,
         },
       });
-
-      // Map API response to Job format
-      const jobListings = response.data.items.map((item: any) => ({
-        title: item.title,
-        link: item.link,
-        snippet: item.snippet,
-      }));
-      setJobs((prevJobs) => [...prevJobs, ...jobListings]); // Append new jobs to existing ones
-    } catch (err) {
-      setError("Error fetching job listings.");
+  
+      if (response.data.items) {
+        const jobListings = response.data.items.map((item: any) => ({
+          title: item.title,
+          link: item.link,
+          snippet: item.snippet,
+        }));
+        setJobs((prevJobs) => [...prevJobs, ...jobListings]);
+      } else {
+        setError("No job listings found.");
+      }
+    } catch (err: any) {
+      if (err.response?.status === 429) {
+        setError("Too many requests. Please try again later.");
+      } else {
+        setError("Error fetching job listings.");
+      }
       console.error(err);
     } finally {
       setLoading(false);
     }
   };
+  
 
   const loadMoreJobs = () => {
     setPage((prevPage) => prevPage + 1); // Increment page to load more results
